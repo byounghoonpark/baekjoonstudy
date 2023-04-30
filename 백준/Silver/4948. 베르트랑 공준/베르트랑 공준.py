@@ -8,12 +8,12 @@ def prime(n):
             return False
     return True
 
-all_list = set(range(2,246912))
-is_prime = set()
+all_list = list(range(2,246912))
+is_prime = []
 
 for i in all_list:
     if prime(i):
-        is_prime.add(i)
+        is_prime.append(i)
 
 while True:
     cnt=0
