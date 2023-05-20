@@ -1,6 +1,7 @@
 def solution(cards1, cards2, goal):
     answer = []
-    a = b = 0
+    a = 0
+    b = 0
     for i in goal:
         if a < len(cards1) and i == cards1[a]:
             answer.append(cards1[a])
